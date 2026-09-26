@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop-down</title>
+    <script src="drop-down-menu.js" defer></script>
+</head>
+<style>
+    nav > ul {
+        display: flex;
+        list-style: none;
+        padding-left: none;
+        gap: 1em;
+
+    }
+
+    #submenu {
+        list-style: none;
+        padding-left: 0;
+    }
+    .hidden {
+        display:none;
+    }
+
+</style>
+<body>
+    <header>
+        <h1>menu-demo</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="" id="dropdown">link 1</a>
+                    <ul id="submenu" class="hidden">
+                        <li><a href="">sub</a></li>
+                        <li><a href="">sub</a></li>
+                        <li><a href="">sub</a></li>
+                        <li><a href="">sub</a></li>
+                    </ul>
+               </li>
+                <li><a href="">link 2</a></li>
+                <li><a href="">link 3</a></li>
+                <li><a href="">link 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
