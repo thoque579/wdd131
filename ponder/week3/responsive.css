@@ -45,4 +45,34 @@ nav a:hover {
 footer {
     text-align: center;
 }
+
+@media screen and  (min-width: 600px){
+    nav {
+        display: flex;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
           
