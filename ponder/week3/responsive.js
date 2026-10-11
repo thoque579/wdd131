@@ -9,7 +9,7 @@ for each element
     figure out where we will display the message.. get a reference
     figure out what day it is
     figure out how we want to display that day
-    update the displa
+    update the display
 
 */
 
