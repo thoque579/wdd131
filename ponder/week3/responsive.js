@@ -41,9 +41,15 @@ function addIndex() {
 
 addIndex();
 
+const navEl = document.querySelector(".main-nav");
+
 function toggleMenu() {
+    navEl.classList.toggle("hide");
+    menuBtn.classList.toggle("change");
     
 }
 
+const menuBtn = document.querySelector(".menu-btn");
 
-document.querySelector("menu-btn").addEventListener("click", toggleMenu)
+menuBtn.addEventListener("click", toggleMenu)
+
