@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Registration</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Event Ticket Registration</h1>
+        <p>Reserve your ticket for an upcoming event!</p>
+    </header>
+    <main>
+
+  <main>
+    <section class="form-container">
+      <h2>Register for an Event</h2>
+
+      <form id="ticketForm" novalidate>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName"
+               placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="eventDate">Event Date</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+
+        <label for="attendeeType">Attendee Type</label>
+        <select id="attendeeType" name="attendeeType" required>
+          <option value="">Select attendee type</option>
+          <option value="student">Student</option>
+          <option value="guest">Guest</option>
+        </select>
+
+        <div id="studentField" class="hidden">
+          <label for="studentId">Student ID</label>
+          <input type="text" id="studentId" name="studentId"
+                 placeholder="Enter your 9-digit student ID"
+                 maxlength="9" inputmode="numeric">
+        </div>
+
+        <div id="guestField" class="hidden">
+          <label for="accessCode">Guest Access Code</label>
+          <input type="text" id="accessCode" name="accessCode"
+                 placeholder="Enter your access code">
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <div id="errors" class="errors" role="alert"
+           aria-live="polite"></div>
+
+      <div id="ticket" class="ticket hidden" aria-live="polite">
+        <h2>Registration Successful!</h2>
+        <p id="ticketDetails"></p>
+      </div>
+    </section>
+  </main>
+
+
+    </main>
+    
+</body>
+</html>

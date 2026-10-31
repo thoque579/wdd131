@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+header {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1e3a8a;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.9rem;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.hidden {
+  display: none;
+}
+
+.errors {
+  color: #b91c1c;
+  margin-top: 1rem;
+}
+
+.errors ul {
+  padding-left: 1.5rem;
+}
+
+.ticket {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #dcfce7;
+  border: 2px solid #16a34a;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ticket h2 {
+  color: #166534;
+}
+
+.ticket p {
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #475569;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 1rem auto;
+  }
+
+  .form-container {
+    padding: 1.25rem;
+  }
+
+  header {
+    padding: 1.5rem 1rem;
+  }
+}
